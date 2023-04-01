@@ -14,8 +14,8 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
-  DEVICE: jeice
-  DT_LINK: https://github.com/Killaker/aquaris-C
+  DEVICE: omni_jeice
+  DT_LINK: https://github.com/Killaker/android_device_bq_jeice
   DT_PATH: device/bq/jeice
   TARGET: recoveryimage
   TZ: Europe/Madrid
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_8.1
-          name: TWRP-JEICE
+          name: TWRP-jeice
           files: | 
-            work/out/target/product/JEICE/recovery.img
+            work/out/target/product/jeice/recovery.img
